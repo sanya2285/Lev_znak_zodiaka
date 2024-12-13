@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лев — Знак Зодіаку</title>
+    <style>
+        /* Основні стилі сторінки */
+        body {
+            font-family: "Georgia", serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffcc33;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #d9534f;
+        }
+
+        p {
+            margin: 0 0 15px;
+        }
+
+        .animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin: 20px 0;
+        }
+
+        .animation .lion {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #f39c12, #e74c3c);
+            border-radius: 50%;
+            position: relative;
+            animation: move 3s infinite;
+        }
+
+        .animation .lion::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes move {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Лев — Знак Зодіаку</h1>
+    </header>
+    <div class="container">
+        <h2>Опис</h2>
+        <p>Лев — п'ятий знак зодіаку, що символізує силу, впевненість і лідерство. Леви народжуються між 23 липня та 22 серпня.</p>
+        <h2>Характеристики</h2>
+        <p>Елемент: Вогонь<br>Планета: Сонце<br>Символ: Лев</p>
+        <div class="animation">
+            <div class="lion"></div>
+        </div>
+        <p>Леви часто є душею компанії, їхня енергія надихає оточуючих.</p>
+    </div>
+</body>
+</html>
